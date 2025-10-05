@@ -1,0 +1,23 @@
+# Laravel WordPress Connector
+# @package mrdulal
+# @author Sanjaya Dulal <iammrdulal@gmail.com>
+# @copyright 2024 Sanjaya Dulal
+# @license MIT
+
+/vendor/
+/node_modules/
+/.idea/
+/.vscode/
+*.log
+*.cache
+.DS_Store
+Thumbs.db
+.env
+.env.local
+.env.*.local
+.phpunit.result.cache
+coverage/
+build/
+dist/
+*.zip
+*.tar.gz
