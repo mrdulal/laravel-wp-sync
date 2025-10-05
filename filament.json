@@ -1,15 +1,35 @@
 {
-    "_comment": "Laravel WordPress Connector - @package mrdulal - @author Sanjaya Dulal <iammrdulal@gmail.com> - @copyright 2024 Sanjaya Dulal - @license MIT",
-    "name": "mrdulal/laravel-wp-connector",
+    "name": "Laravel WordPress Connector",
     "description": "A Laravel package for WordPress database integration with Filament admin management",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Sanjaya Dulal",
-            "email": "iammrdulal@gmail.com"
-        }
+    "version": "1.0.0",
+    "author": {
+        "name": "Sanjaya Dulal",
+        "email": "iammrdulal@gmail.com",
+        "url": "https://github.com/mrdulal"
+    },
+    "keywords": [
+        "laravel",
+        "wordpress",
+        "filament",
+        "admin",
+        "database",
+        "integration",
+        "cms",
+        "content-management"
     ],
+    "license": "MIT",
+    "homepage": "https://github.com/mrdulal/laravel-wp-connector",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mrdulal/laravel-wp-connector.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mrdulal/laravel-wp-connector/issues"
+    },
+    "funding": {
+        "type": "github",
+        "url": "https://github.com/sponsors/mrdulal"
+    },
     "require": {
         "php": "^8.1",
         "illuminate/support": "^10.0|^11.0",

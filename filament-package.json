@@ -1,0 +1,90 @@
+{
+  "name": "Laravel WordPress Connector",
+  "slug": "laravel-wp-connector",
+  "version": "1.0.0",
+  "description": "A Laravel package for WordPress database integration with Filament admin management",
+  "author": {
+    "name": "Sanjaya Dulal",
+    "email": "iammrdulal@gmail.com",
+    "url": "https://github.com/mrdulal"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/mrdulal/laravel-wp-connector",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrdulal/laravel-wp-connector.git"
+  },
+  "keywords": [
+    "laravel",
+    "wordpress",
+    "filament",
+    "admin",
+    "database",
+    "integration",
+    "cms",
+    "content-management"
+  ],
+  "categories": [
+    "admin-panels",
+    "database",
+    "cms",
+    "content-management"
+  ],
+  "features": [
+    "WordPress Database Integration",
+    "Filament Admin Panel",
+    "Dashboard Widgets",
+    "Eloquent Models",
+    "Relationships",
+    "Meta Data Support",
+    "Easy Query Interface"
+  ],
+  "screenshots": [
+    {
+      "title": "WordPress Users Management",
+      "url": "https://raw.githubusercontent.com/mrdulal/laravel-wp-connector/main/screenshots/users.png",
+      "description": "Manage WordPress users through Filament admin panel"
+    },
+    {
+      "title": "WordPress Posts Management",
+      "url": "https://raw.githubusercontent.com/mrdulal/laravel-wp-connector/main/screenshots/posts.png",
+      "description": "Create and edit WordPress posts with rich editor"
+    },
+    {
+      "title": "Dashboard Widgets",
+      "url": "https://raw.githubusercontent.com/mrdulal/laravel-wp-connector/main/screenshots/dashboard.png",
+      "description": "Real-time statistics and recent content widgets"
+    }
+  ],
+  "requirements": {
+    "php": "^8.1",
+    "laravel": "^10.0|^11.0",
+    "filament": "^3.0"
+  },
+  "installation": {
+    "composer": "composer require mrdulal/laravel-wp-connector",
+    "publish": "php artisan vendor:publish --tag=wp-connector-config",
+    "migrate": "php artisan migrate",
+    "clear": "php artisan config:clear"
+  },
+  "documentation": {
+    "readme": "README.md",
+    "installation": "INSTALLATION.md",
+    "changelog": "CHANGELOG.md",
+    "contributing": "CONTRIBUTING.md"
+  },
+  "support": {
+    "issues": "https://github.com/mrdulal/laravel-wp-connector/issues",
+    "discussions": "https://github.com/mrdulal/laravel-wp-connector/discussions",
+    "email": "iammrdulal@gmail.com"
+  },
+  "funding": {
+    "github": "https://github.com/sponsors/mrdulal",
+    "patreon": "https://patreon.com/mrdulal"
+  },
+  "social": {
+    "twitter": "https://twitter.com/mrdulal",
+    "linkedin": "https://linkedin.com/in/mrdulal",
+    "github": "https://github.com/mrdulal"
+  }
+}

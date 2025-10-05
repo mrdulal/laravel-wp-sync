@@ -1,0 +1,40 @@
+{
+  "name": "laravel-wp-connector",
+  "version": "1.0.0",
+  "description": "A Laravel package for WordPress database integration with Filament admin management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "laravel",
+    "wordpress",
+    "filament",
+    "admin",
+    "database",
+    "integration",
+    "cms",
+    "content-management"
+  ],
+  "author": {
+    "name": "Sanjaya Dulal",
+    "email": "iammrdulal@gmail.com",
+    "url": "https://github.com/mrdulal"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/mrdulal/laravel-wp-connector",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrdulal/laravel-wp-connector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrdulal/laravel-wp-connector/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/mrdulal"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
