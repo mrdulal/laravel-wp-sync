@@ -1,9 +1,8 @@
 <?php
 
 /**
- * Laravel WordPress Connector
- * 
- * @package mrdulal
+ * Laravel WordPress Connector.
+ *
  * @author Sanjaya Dulal <iammrdulal@gmail.com>
  * @copyright 2024 Sanjaya Dulal
  * @license MIT
@@ -36,6 +35,7 @@ class WpOption extends Model
     public static function get(string $name, $default = null)
     {
         $option = static::where('option_name', $name)->first();
+
         return $option ? $option->option_value : $default;
     }
 
@@ -56,7 +56,7 @@ class WpOption extends Model
     /**
      * Delete an option.
      */
-    public static function delete(string $name): bool
+    public static function deleteOption(string $name): bool
     {
         return static::where('option_name', $name)->delete() > 0;
     }

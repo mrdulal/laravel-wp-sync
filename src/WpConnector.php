@@ -1,9 +1,8 @@
 <?php
 
 /**
- * Laravel WordPress Connector
- * 
- * @package mrdulal
+ * Laravel WordPress Connector.
+ *
  * @author Sanjaya Dulal <iammrdulal@gmail.com>
  * @copyright 2024 Sanjaya Dulal
  * @license MIT
@@ -11,11 +10,11 @@
 
 namespace MrDulal\WpConnector;
 
-use MrDulal\WpConnector\Models\WpUser;
-use MrDulal\WpConnector\Models\WpPost;
 use MrDulal\WpConnector\Models\WpComment;
-use MrDulal\WpConnector\Models\WpTerm;
 use MrDulal\WpConnector\Models\WpOption;
+use MrDulal\WpConnector\Models\WpPost;
+use MrDulal\WpConnector\Models\WpTerm;
+use MrDulal\WpConnector\Models\WpUser;
 
 class WpConnector
 {

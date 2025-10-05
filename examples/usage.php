@@ -1,22 +1,21 @@
 <?php
 
 /**
- * Laravel WordPress Connector
- * 
- * @package mrdulal
+ * Laravel WordPress Connector.
+ *
  * @author Sanjaya Dulal <iammrdulal@gmail.com>
  * @copyright 2024 Sanjaya Dulal
  * @license MIT
- * 
+ *
  * Example Usage
- * 
+ *
  * This file demonstrates how to use the Laravel WordPress Connector package.
  */
 
 use MrDulal\WpConnector\Facades\Wp;
+use MrDulal\WpConnector\Models\WpComment;
 use MrDulal\WpConnector\Models\WpPost;
 use MrDulal\WpConnector\Models\WpUser;
-use MrDulal\WpConnector\Models\WpComment;
 
 // Example 1: Get recent published posts with authors
 $recentPosts = Wp::posts()->published()->with('author')->latest()->take(5)->get();
@@ -102,9 +101,9 @@ $searchResults = Wp::posts()
 echo "Laravel WordPress Connector Examples\n";
 echo "====================================\n\n";
 
-echo "Recent Posts Count: " . $recentPosts->count() . "\n";
-echo "User Count: " . $userCount . "\n";
-echo "Comment Count: " . $commentCount . "\n";
-echo "Post Count: " . $postCount . "\n";
-echo "Site Name: " . $siteName . "\n";
-echo "Site Description: " . $siteDescription . "\n";
+echo 'Recent Posts Count: ' . $recentPosts->count() . "\n";
+echo 'User Count: ' . $userCount . "\n";
+echo 'Comment Count: ' . $commentCount . "\n";
+echo 'Post Count: ' . $postCount . "\n";
+echo 'Site Name: ' . $siteName . "\n";
+echo 'Site Description: ' . $siteDescription . "\n";

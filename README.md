@@ -9,7 +9,18 @@ Laravel WordPress Connector
 
 # Laravel WordPress Connector
 
-A Laravel package that integrates WordPress database into Laravel with Filament admin management.
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/mrdulal/laravel-wp-connector?style=flat-square)](https://packagist.org/packages/mrdulal/laravel-wp-connector)
+[![Total Downloads](https://img.shields.io/packagist/dt/mrdulal/laravel-wp-connector?style=flat-square)](https://packagist.org/packages/mrdulal/laravel-wp-connector)
+[![License](https://img.shields.io/packagist/l/mrdulal/laravel-wp-connector?style=flat-square)](https://packagist.org/packages/mrdulal/laravel-wp-connector)
+[![PHP Version](https://img.shields.io/packagist/php-v/mrdulal/laravel-wp-connector?style=flat-square)](https://packagist.org/packages/mrdulal/laravel-wp-connector)
+[![Laravel Version](https://img.shields.io/badge/Laravel-10.0%2B-red?style=flat-square)](https://laravel.com)
+[![Filament Version](https://img.shields.io/badge/Filament-3.0%2B-blue?style=flat-square)](https://filamentphp.com)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/mrdulal/laravel-wp-connector/ci.yml?branch=main&style=flat-square)](https://github.com/mrdulal/laravel-wp-connector/actions)
+[![Code Coverage](https://img.shields.io/codecov/c/github/mrdulal/laravel-wp-connector?style=flat-square)](https://codecov.io/gh/mrdulal/laravel-wp-connector)
+[![Code Quality](https://img.shields.io/badge/code%20style-PSR--12-green?style=flat-square)](https://www.php-fig.org/psr/psr-12/)
+[![PHPStan](https://img.shields.io/badge/PHPStan-level%208-brightgreen?style=flat-square)](https://phpstan.org)
+
+A comprehensive Laravel package that seamlessly integrates WordPress database functionality into Laravel applications with full Filament admin panel support.
 
 ## Features
 

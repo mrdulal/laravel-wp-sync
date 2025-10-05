@@ -1,9 +1,8 @@
 <?php
 
 /**
- * Laravel WordPress Connector
- * 
- * @package mrdulal
+ * Laravel WordPress Connector.
+ *
  * @author Sanjaya Dulal <iammrdulal@gmail.com>
  * @copyright 2024 Sanjaya Dulal
  * @license MIT
@@ -13,8 +12,8 @@ namespace MrDulal\WpConnector\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class WpPost extends Model
 {
@@ -101,6 +100,7 @@ class WpPost extends Model
     public function getMeta(string $key, $default = null)
     {
         $meta = $this->meta()->where('meta_key', $key)->first();
+
         return $meta ? $meta->meta_value : $default;
     }
 

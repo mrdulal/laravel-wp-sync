@@ -1,9 +1,8 @@
 <?php
 
 /**
- * Laravel WordPress Connector
- * 
- * @package mrdulal
+ * Laravel WordPress Connector.
+ *
  * @author Sanjaya Dulal <iammrdulal@gmail.com>
  * @copyright 2024 Sanjaya Dulal
  * @license MIT
@@ -67,7 +66,7 @@ class WpComment extends Model
      */
     public function parent(): BelongsTo
     {
-        return $this->belongsTo(WpComment::class, 'comment_parent', 'comment_ID');
+        return $this->belongsTo(self::class, 'comment_parent', 'comment_ID');
     }
 
     /**
@@ -75,7 +74,7 @@ class WpComment extends Model
      */
     public function children(): HasMany
     {
-        return $this->hasMany(WpComment::class, 'comment_parent', 'comment_ID');
+        return $this->hasMany(self::class, 'comment_parent', 'comment_ID');
     }
 
     /**
@@ -93,6 +92,7 @@ class WpComment extends Model
     public function getMeta(string $key, $default = null)
     {
         $meta = $this->meta()->where('meta_key', $key)->first();
+
         return $meta ? $meta->meta_value : $default;
     }
 

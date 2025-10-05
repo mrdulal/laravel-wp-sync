@@ -1,9 +1,8 @@
 <?php
 
 /**
- * Laravel WordPress Connector
- * 
- * @package mrdulal
+ * Laravel WordPress Connector.
+ *
  * @author Sanjaya Dulal <iammrdulal@gmail.com>
  * @copyright 2024 Sanjaya Dulal
  * @license MIT
@@ -11,9 +10,9 @@
 
 namespace MrDulal\WpConnector\Tests;
 
-use Orchestra\Testbench\TestCase;
-use MrDulal\WpConnector\WpConnectorServiceProvider;
 use MrDulal\WpConnector\Facades\Wp;
+use MrDulal\WpConnector\Providers\WpConnectorServiceProvider;
+use Orchestra\Testbench\TestCase;
 
 class WpConnectorTest extends TestCase
 {

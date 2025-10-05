@@ -1,9 +1,8 @@
 <?php
 
 /**
- * Laravel WordPress Connector
- * 
- * @package mrdulal
+ * Laravel WordPress Connector.
+ *
  * @author Sanjaya Dulal <iammrdulal@gmail.com>
  * @copyright 2024 Sanjaya Dulal
  * @license MIT
@@ -12,13 +11,6 @@
 namespace MrDulal\WpConnector\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Route;
-use MrDulal\WpConnector\Models\WpUser;
-use MrDulal\WpConnector\Models\WpPost;
-use MrDulal\WpConnector\Models\WpComment;
-use MrDulal\WpConnector\Models\WpTerm;
-use MrDulal\WpConnector\Models\WpOption;
-use MrDulal\WpConnector\Models\WpMeta;
 
 class WpConnectorServiceProvider extends ServiceProvider
 {
@@ -74,7 +66,7 @@ class WpConnectorServiceProvider extends ServiceProvider
     protected function setupWordPressConnection()
     {
         $config = config('wordpress');
-        
+
         if ($config['enabled']) {
             config([
                 'database.connections.wordpress' => [
@@ -89,16 +81,11 @@ class WpConnectorServiceProvider extends ServiceProvider
                     'prefix' => $config['prefix'],
                     'strict' => false,
                     'engine' => null,
-                ]
+                ],
             ]);
 
-            // Set default connection for WordPress models
-            WpUser::setConnection('wordpress');
-            WpPost::setConnection('wordpress');
-            WpComment::setConnection('wordpress');
-            WpTerm::setConnection('wordpress');
-            WpOption::setConnection('wordpress');
-            WpMeta::setConnection('wordpress');
+            // WordPress models will use the 'wordpress' connection
+            // This is configured in the models themselves
         }
     }
 }
